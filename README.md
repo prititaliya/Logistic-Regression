@@ -58,16 +58,16 @@ By using a **small learning rate** (like 0.1):
 new_weight = old_weight + learning_rate * (y_true - y_predicted) * input
 ```
 ---
-from sklearn.linear_model import LogisticRegression
+- from sklearn.linear_model import LogisticRegression
 
-logreg = LogisticRegression()
-logreg.fit(X, y)
-m1 = logreg.coef_[0][0]
-c1 = logreg.intercept_[0]
+- logreg = LogisticRegression()
+- logreg.fit(X, y)
+- m1 = logreg.coef_[0][0]
+- c1 = logreg.intercept_[0]
 
-plt.figure(figsize=(10, 5))
-plt.scatter(X[:, 0], X[:, 1], c=y, s=25, edgecolor='k')
-plt.plot(X[:, 0], m*X[:, 0] + c, color='green', label="Perceptron Boundary")
-plt.plot(X[:, 0], m1*X[:, 0] + c1, color='red', label="Logistic Regression Boundary")
-plt.legend()
-plt.show()
+- plt.figure(figsize=(10, 5))
+- plt.scatter(X[:, 0], X[:, 1], c=y, s=25, edgecolor='k')
+- plt.plot(X[:, 0], m*X[:, 0] + c, color='green', label="Perceptron Boundary")
+- plt.plot(X[:, 0], m1*X[:, 0] + c1, color='red', label="Logistic Regression Boundary")
+- plt.legend()
+- plt.show()
