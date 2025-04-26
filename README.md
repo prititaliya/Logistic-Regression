@@ -56,8 +56,8 @@ By using a **small learning rate** (like 0.1):
 **Learning rate idea**:
 ```math
 new_weight = old_weight + learning_rate * (y_true - y_predicted) * input
-
-
+```
+---
 from sklearn.linear_model import LogisticRegression
 
 logreg = LogisticRegression()
